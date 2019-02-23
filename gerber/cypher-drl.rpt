@@ -1,5 +1,5 @@
-Drill report for C:/Users/Max/Documents/keyboard design/pcbs/Cypher_PCB/cypher.kicad_pcb
-Created on 12/28/18 22:23:45
+Drill report for C:\Users\Max\Documents\keyboard design\pcbs\Cypher_PCB\cypher.kicad_pcb
+Created on 1/20/2019 1:24:20 PM
 
 Copper Layer Stackup:
     =============================================================
@@ -10,14 +10,14 @@ Copper Layer Stackup:
 Drill file 'cypher-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.40mm  0.016"  (228 holes)
+    T1  0.40mm  0.016"  (89 holes)
     T2  0.70mm  0.028"  (4 holes)  (with 4 slots)
     T3  0.90mm  0.035"  (6 holes)
     T4  1.00mm  0.039"  (6 holes)
     T5  1.04mm  0.041"  (200 holes)
     T6  1.47mm  0.058"  (200 holes)
 
-    Total plated holes count 644
+    Total plated holes count 505
 
 
 Drill file 'cypher-NPTH.drl' contains
