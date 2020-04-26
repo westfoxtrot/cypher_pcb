@@ -950,9 +950,9 @@ Text GLabel 4080 5055 2    50   Input ~ 0
 Col13
 Text GLabel 2780 4755 0    50   Input ~ 0
 Col15
-Text GLabel 2780 4555 0    50   Input ~ 0
-Col16
 Text GLabel 2780 4655 0    50   Input ~ 0
+Col16
+Text GLabel 2780 4555 0    50   Input ~ 0
 Col17
 Text GLabel 4080 4955 2    50   Input ~ 0
 Col18
