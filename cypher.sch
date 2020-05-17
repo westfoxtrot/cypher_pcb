@@ -328,8 +328,6 @@ Wire Wire Line
 Wire Wire Line
 	1460 2050 1580 2050
 Wire Wire Line
-	1580 2050 1580 2150
-Wire Wire Line
 	1580 2160 2170 2160
 Wire Wire Line
 	2170 2160 2170 2190
@@ -344,11 +342,6 @@ Wire Wire Line
 Connection ~ 2170 2020
 Wire Wire Line
 	2170 2020 2170 1810
-Wire Wire Line
-	1460 2150 1580 2150
-Connection ~ 1580 2150
-Wire Wire Line
-	1580 2150 1580 2160
 NoConn ~ 1460 1750
 NoConn ~ 1460 1150
 Wire Wire Line
@@ -410,17 +403,6 @@ F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DAT
 	1    6310 1545
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 5EB19D46
-P 4520 1540
-F 0 "F1" V 4315 1540 50  0000 C CNN
-F 1 "500ma" V 4406 1540 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 4570 1340 50  0001 L CNN
-F 3 "~" H 4520 1540 50  0001 C CNN
-	1    4520 1540
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	3720 575  3720 2550
 Wire Notes Line
@@ -429,34 +411,6 @@ Wire Notes Line
 	5355 2550 5355 575 
 Wire Notes Line
 	5355 575  3720 575 
-Text Notes 4360 2530 0    50   Italic 0
-Polyfuse\n
-Wire Wire Line
-	4420 1540 4145 1540
-Wire Wire Line
-	4620 1540 4940 1540
-$Comp
-L power:VCC #PWR0101
-U 1 1 5EB35097
-P 4145 1540
-F 0 "#PWR0101" H 4145 1390 50  0001 C CNN
-F 1 "VCC" V 4163 1667 50  0000 L CNN
-F 2 "" H 4145 1540 50  0001 C CNN
-F 3 "" H 4145 1540 50  0001 C CNN
-	1    4145 1540
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0105
-U 1 1 5EB36440
-P 4940 1540
-F 0 "#PWR0105" H 4940 1390 50  0001 C CNN
-F 1 "+5V" V 4955 1668 50  0000 L CNN
-F 2 "" H 4940 1540 50  0001 C CNN
-F 3 "" H 4940 1540 50  0001 C CNN
-	1    4940 1540
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	5410 575  5410 2550
 Wire Notes Line
@@ -680,8 +634,8 @@ L Device:D D91
 U 1 1 5EC2D367
 P 8120 2820
 F 0 "D91" H 8120 2604 50  0000 C CNN
-F 1 "D" H 8120 2695 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 8120 2820 50  0001 C CNN
+F 1 "1N4148" H 8120 2695 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 8120 2820 50  0001 C CNN
 F 3 "~" H 8120 2820 50  0001 C CNN
 	1    8120 2820
 	-1   0    0    1   
@@ -956,4 +910,50 @@ Text GLabel 2780 4555 0    50   Input ~ 0
 Col17
 Text GLabel 4080 4955 2    50   Input ~ 0
 Col18
+Wire Wire Line
+	1580 2150 1580 2160
+Wire Wire Line
+	1580 2050 1580 2150
+Connection ~ 1580 2150
+Wire Wire Line
+	1460 2150 1580 2150
+Text Notes 4360 2530 0    50   Italic 0
+Polyfuse\n
+$Comp
+L power:+5V #PWR0105
+U 1 1 5EB36440
+P 4940 1540
+F 0 "#PWR0105" H 4940 1390 50  0001 C CNN
+F 1 "+5V" V 4955 1668 50  0000 L CNN
+F 2 "" H 4940 1540 50  0001 C CNN
+F 3 "" H 4940 1540 50  0001 C CNN
+	1    4940 1540
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5EB35097
+P 4145 1540
+F 0 "#PWR0101" H 4145 1390 50  0001 C CNN
+F 1 "VCC" V 4163 1667 50  0000 L CNN
+F 2 "" H 4145 1540 50  0001 C CNN
+F 3 "" H 4145 1540 50  0001 C CNN
+	1    4145 1540
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4620 1540 4940 1540
+Wire Wire Line
+	4420 1540 4145 1540
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5EB19D46
+P 4520 1540
+F 0 "F1" V 4315 1540 50  0000 C CNN
+F 1 "500ma" V 4406 1540 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 4570 1340 50  0001 L CNN
+F 3 "~" H 4520 1540 50  0001 C CNN
+	1    4520 1540
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
