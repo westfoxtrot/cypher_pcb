@@ -161,11 +161,11 @@ Text GLabel 4080 5855 2    50   Input ~ 0
 Col1
 Text GLabel 4080 5755 2    50   Input ~ 0
 Col2
-Text GLabel 2780 6355 0    50   Input ~ 0
+Text GLabel 2780 5355 0    50   Input ~ 0
 Col3
-Text GLabel 2780 6255 0    50   Input ~ 0
+Text GLabel 2780 5455 0    50   Input ~ 0
 Col4
-Text GLabel 2780 6155 0    50   Input ~ 0
+Text GLabel 2780 5555 0    50   Input ~ 0
 Col5
 Text GLabel 2780 5155 0    50   Input ~ 0
 Col6
@@ -403,17 +403,6 @@ F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DAT
 	1    6310 1545
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 5EB19D46
-P 4500 1050
-F 0 "F1" V 4295 1050 50  0000 C CNN
-F 1 "500ma" V 4386 1050 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 4550 850 50  0001 L CNN
-F 3 "~" H 4500 1050 50  0001 C CNN
-	1    4500 1050
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	3720 575  3720 2550
 Wire Notes Line
@@ -422,34 +411,6 @@ Wire Notes Line
 	5355 2550 5355 575 
 Wire Notes Line
 	5355 575  3720 575 
-Text Notes 4360 2530 0    50   Italic 0
-Protection
-Wire Wire Line
-	4400 1050 4125 1050
-Wire Wire Line
-	4600 1050 4920 1050
-$Comp
-L power:VCC #PWR0101
-U 1 1 5EB35097
-P 4125 1050
-F 0 "#PWR0101" H 4125 900 50  0001 C CNN
-F 1 "VCC" V 4143 1177 50  0000 L CNN
-F 2 "" H 4125 1050 50  0001 C CNN
-F 3 "" H 4125 1050 50  0001 C CNN
-	1    4125 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0105
-U 1 1 5EB36440
-P 4920 1050
-F 0 "#PWR0105" H 4920 900 50  0001 C CNN
-F 1 "+5V" V 4935 1178 50  0000 L CNN
-F 2 "" H 4920 1050 50  0001 C CNN
-F 3 "" H 4920 1050 50  0001 C CNN
-	1    4920 1050
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	5410 575  5410 2550
 Wire Notes Line
@@ -903,12 +864,9 @@ F 3 "" H 10985 2870 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 2780 5855
-NoConn ~ 2780 5355
-NoConn ~ 2780 5455
 NoConn ~ 2780 5755
 NoConn ~ 4080 5655
 NoConn ~ 2780 5655
-NoConn ~ 2780 5555
 Text GLabel 9930 4930 0    50   Input ~ 0
 LED_OUT
 Wire Wire Line
@@ -950,28 +908,52 @@ Col17
 Text GLabel 4080 4955 2    50   Input ~ 0
 Col18
 Wire Wire Line
-	4385 1500 4110 1500
+	1580 2150 1580 2160
 Wire Wire Line
-	4585 1500 4905 1500
+	1580 2050 1580 2150
+Connection ~ 1580 2150
+Wire Wire Line
+	1460 2150 1580 2150
+Text Notes 4360 2530 0    50   Italic 0
+Polyfuse\n
 $Comp
-L power:GND #PWR?
-U 1 1 5EC35D28
-P 4905 1500
-F 0 "#PWR?" H 4905 1250 50  0001 C CNN
-F 1 "GND" V 4910 1372 50  0000 R CNN
-F 2 "" H 4905 1500 50  0001 C CNN
-F 3 "" H 4905 1500 50  0001 C CNN
-	1    4905 1500
+L power:+5V #PWR0105
+U 1 1 5EB36440
+P 4940 1540
+F 0 "#PWR0105" H 4940 1390 50  0001 C CNN
+F 1 "+5V" V 4955 1668 50  0000 L CNN
+F 2 "" H 4940 1540 50  0001 C CNN
+F 3 "" H 4940 1540 50  0001 C CNN
+	1    4940 1540
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5EB35097
+P 4145 1540
+F 0 "#PWR0101" H 4145 1390 50  0001 C CNN
+F 1 "VCC" V 4163 1667 50  0000 L CNN
+F 2 "" H 4145 1540 50  0001 C CNN
+F 3 "" H 4145 1540 50  0001 C CNN
+	1    4145 1540
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1580 2050 1580 2160
-Text GLabel 1670 2325 2    50   Input ~ 0
-Shield
-Text GLabel 4110 1500 0    50   Input ~ 0
-Shield
+	4620 1540 4940 1540
 Wire Wire Line
-	1670 2325 1460 2325
-Wire Wire Line
-	1460 2150 1460 2325
+	4420 1540 4145 1540
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5EB19D46
+P 4520 1540
+F 0 "F1" V 4315 1540 50  0000 C CNN
+F 1 "500ma" V 4406 1540 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 4570 1340 50  0001 L CNN
+F 3 "~" H 4520 1540 50  0001 C CNN
+	1    4520 1540
+	0    1    1    0   
+$EndComp
+NoConn ~ 2780 6155
+NoConn ~ 2780 6255
+NoConn ~ 2780 6355
 $EndSCHEMATC

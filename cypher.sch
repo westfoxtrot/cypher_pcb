@@ -161,11 +161,11 @@ Text GLabel 4080 5855 2    50   Input ~ 0
 Col1
 Text GLabel 4080 5755 2    50   Input ~ 0
 Col2
-Text GLabel 2780 6355 0    50   Input ~ 0
+Text GLabel 2780 5355 0    50   Input ~ 0
 Col3
-Text GLabel 2780 6255 0    50   Input ~ 0
+Text GLabel 2780 5455 0    50   Input ~ 0
 Col4
-Text GLabel 2780 6155 0    50   Input ~ 0
+Text GLabel 2780 5555 0    50   Input ~ 0
 Col5
 Text GLabel 2780 5155 0    50   Input ~ 0
 Col6
@@ -523,14 +523,14 @@ Wire Notes Line
 Wire Notes Line
 	9310 2605 11165 2605
 Wire Notes Line
-	11165 2605 11165 5600
+	11165 3015 11165 6010
 Wire Notes Line
-	11165 5600 9310 5600
+	11165 6000 9310 6000
 Wire Notes Line
-	9310 5600 9310 2605
+	9320 6000 9310 2605
 Text Notes 10125 2510 0    50   Italic 0
 Breakout\n
-Text Notes 9985 5570 0    50   Italic 0
+Text Notes 9985 5970 0    50   Italic 0
 Indicator LEDs\n
 Wire Notes Line
 	9255 2605 9255 4405
@@ -823,8 +823,6 @@ Wire Wire Line
 	9475 2870 10210 2870
 Wire Wire Line
 	10230 4630 9475 4630
-Wire Wire Line
-	9475 4630 9475 3805
 Connection ~ 9475 3805
 Wire Wire Line
 	10230 5230 10985 5230
@@ -864,12 +862,9 @@ F 3 "" H 10985 2870 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 2780 5855
-NoConn ~ 2780 5355
-NoConn ~ 2780 5455
 NoConn ~ 2780 5755
 NoConn ~ 4080 5655
 NoConn ~ 2780 5655
-NoConn ~ 2780 5555
 Text GLabel 9930 4930 0    50   Input ~ 0
 LED_OUT
 Wire Wire Line
@@ -956,4 +951,64 @@ F 3 "~" H 4520 1540 50  0001 C CNN
 	1    4520 1540
 	0    1    1    0   
 $EndComp
+NoConn ~ 2780 6155
+NoConn ~ 2780 6255
+NoConn ~ 2780 6355
+$Comp
+L Device:C_Small C8
+U 1 1 5EDBC859
+P 9875 5565
+F 0 "C8" H 9885 5635 50  0000 L CNN
+F 1 "100nf" H 9885 5485 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9875 5565 50  0001 C CNN
+F 3 "~" H 9875 5565 50  0001 C CNN
+	1    9875 5565
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5EDBDAFF
+P 10260 5565
+F 0 "C9" H 10270 5635 50  0000 L CNN
+F 1 "100nf" H 10270 5485 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10260 5565 50  0001 C CNN
+F 3 "~" H 10260 5565 50  0001 C CNN
+	1    10260 5565
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5EDBE225
+P 10695 5565
+F 0 "C10" H 10705 5635 50  0000 L CNN
+F 1 "100nf" H 10705 5485 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10695 5565 50  0001 C CNN
+F 3 "~" H 10695 5565 50  0001 C CNN
+	1    10695 5565
+	-1   0    0    1   
+$EndComp
+Connection ~ 10985 5230
+Wire Wire Line
+	10985 5230 10985 5665
+Wire Wire Line
+	10985 5665 10695 5665
+Connection ~ 10260 5665
+Wire Wire Line
+	10260 5665 9875 5665
+Connection ~ 10695 5665
+Wire Wire Line
+	10695 5665 10260 5665
+Wire Wire Line
+	10695 5465 10260 5465
+Wire Wire Line
+	9475 3805 9475 4630
+Connection ~ 9875 5465
+Wire Wire Line
+	9875 5465 9475 5465
+Connection ~ 10260 5465
+Wire Wire Line
+	10260 5465 9875 5465
+Connection ~ 9475 4630
+Wire Wire Line
+	9475 4630 9475 5465
 $EndSCHEMATC
