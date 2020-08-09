@@ -617,7 +617,7 @@ $EndSheet
 Wire Wire Line
 	3665 6595 3940 6595
 $Comp
-L Connector:AVR-ISP-6 J2
+L cypher-rescue:AVR-ISP-6-Connector J2
 U 1 1 5C1571E9
 P 5815 2490
 F 0 "J2" H 5535 2494 50  0000 R CNN
@@ -829,7 +829,7 @@ Wire Wire Line
 NoConn ~ 2090 1870
 NoConn ~ 2090 1270
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-MU U1
+L cypher-rescue:ATmega32U4-MU-MCU_Microchip_ATmega U1
 U 1 1 5ED35339
 P 3065 5295
 F 0 "U1" H 3065 3406 50  0000 C CNN
@@ -844,7 +844,7 @@ Wire Wire Line
 Wire Wire Line
 	3665 4295 3915 4295
 $Comp
-L ai03-locallib:PRTR5V0U2X U2
+L cypher-rescue:PRTR5V0U2X-ai03-locallib U2
 U 1 1 5D2FEB33
 P 3180 1510
 F 0 "U2" V 3127 1648 60  0000 L CNN
@@ -979,7 +979,7 @@ Connection ~ 7935 1635
 Wire Wire Line
 	7935 1635 7935 1360
 $Comp
-L transistors:MMBT3904 Q1
+L cypher-rescue:MMBT3904-transistors Q1
 U 1 1 5E9E999A
 P 5390 4995
 F 0 "Q1" H 5581 5041 50  0000 L CNN
