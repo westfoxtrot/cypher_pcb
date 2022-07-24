@@ -1,0 +1,31 @@
+Drill report for cypher.kicad_pcb
+Created on 24/07/2022 17:02:23
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'cypher-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (128 holes)
+    T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+    T3  0.800mm  0.0315"  (2 holes)
+    T4  1.000mm  0.0394"  (3 holes)
+    T5  1.040mm  0.0409"  (212 holes)
+    T6  1.470mm  0.0579"  (212 holes)
+
+    Total plated holes count 561
+
+
+Drill file 'cypher-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.650mm  0.0256"  (2 holes)
+    T2  1.750mm  0.0689"  (212 holes)
+    T3  3.048mm  0.1200"  (26 holes)
+    T4  3.988mm  0.1570"  (132 holes)
+
+    Total unplated holes count 372
