@@ -1,0 +1,5 @@
+#kicad automatic backups
+*-backups/
+
+#zip files
+*.zip
