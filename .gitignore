@@ -1,1 +1,8 @@
+#kicad automatic backups
+*-backups/
+
+#zip files
+*.zip
+
+#MacOS files
 .DS_Store
