@@ -4286,7 +4286,7 @@
     (in_bom yes) (on_board yes)
     (uuid a76d12c0-1c07-4d80-89aa-54a0de2bbfc3)
     (property "Reference" "D91" (id 0) (at 205.74 66.04 0))
-    (property "Value" "BAT541G" (id 1) (at 205.74 68.58 0))
+    (property "Value" "BAT54T1G" (id 1) (at 205.74 68.58 0))
     (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 205.74 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4823,7 +4823,7 @@
       (reference "D90") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/a76d12c0-1c07-4d80-89aa-54a0de2bbfc3"
-      (reference "D91") (unit 1) (value "BAT541G") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D91") (unit 1) (value "BAT54T1G") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-00005c1aa6cb/00000000-0000-0000-0000-00005e7d8bb8"
       (reference "D92") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
